@@ -46,6 +46,7 @@ using kt_label.py (You should modify the image and label path to suit you)
 python kt_label.py
 ```
 ## Testing mAP
+[`yolor_p6.pt`](https://drive.google.com/file/d/1Tdn3yqpZ79X7R1Ql0zNlNScB1Dv9Fp76/view?usp=sharing)
 ```
 python test.py --data data/kt.yaml --img 1920 --batch 4 --conf ?? --iou ?? --device 0 --cfg cfg/yolor_p6_kt.cfg --weights ??? --name katech_mAPtest --save-txt --names data/kt.names --verbose
 ```
