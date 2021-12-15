@@ -1,0 +1,10 @@
+# train and val datasets (image directory or *.txt file with image paths)
+train: kt2yolo/kt_train.txt
+val: kt2yolo/kt_val.txt
+test: kt2yolo/kt_val.txt
+
+# number of classes
+nc: 4
+
+# class names
+names: ['Vehicle', 'Pedestrian', 'TrafficLight', 'TrafficSign']
