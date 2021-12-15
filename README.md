@@ -40,12 +40,12 @@ cd /yolor
 ```
 
 ## Dataset format
-Pascal VOC (XML) to YOLO(txt)
+Pascal VOC(XML) to YOLO(txt)
 using kt_label.py (You should modify the image and label path to suit you)
 ```
 python kt_label.py
 ```
-## Testing
+## Testing mAP
 ```
 python test.py --data data/kt.yaml --img 1920 --batch 4 --conf ?? --iou ?? --device 0 --cfg cfg/yolor_p6_kt.cfg --weights ??? --name katech_mAPtest --save-txt --names data/kt.names --verbose
 ```
@@ -58,4 +58,10 @@ python -m torch.distributed.launch --nproc_per_node 4 --master_port 9127 we.py -
 ## Image Inference
 ```
 python detect.py --source inference/images/horses.jpg --cfg cfg/??? --weights ?????? --conf ???? --img-size 1920 --device 0
+```
+
+## Dataset format
+YOLO(txt) to Pascal VOC(XML)
+```
+???
 ```
