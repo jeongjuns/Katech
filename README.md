@@ -45,3 +45,17 @@ using kt_label.py (You should modify the image and label path to suit you)
 ```
 python kt_label.py
 ```
+## Testing
+```
+python test.py --data data/kt.yaml --img 1920 --batch 4 --conf ?? --iou ?? --device 0 --cfg cfg/yolor_p6_kt.cfg --weights ??? --name katech_mAPtest --save-txt --names data/kt.names --verbose
+```
+
+## Training schedule
+```
+python -m torch.distributed.launch --nproc_per_node 4 --master_port 9127 we.py --batch-size 16 --img 1280 1280 --data kt.yaml --cfg cfg/yolor_p6_kt.cfg --device 0,1,2,3 --sync-bn --hyp data/hyp.scratch.1280.yaml --epochs 300 --weights yolor_p6.pt --name ??? --workers 16
+```
+
+## Image Inference
+```
+python detect.py --source inference/images/horses.jpg --cfg cfg/??? --weights ?????? --conf ???? --img-size 1920 --device 0
+```
