@@ -7,7 +7,7 @@ YOLOR (https://github.com/WongKinYiu/yolor)
 git clone https://github.com/jeongjuns/Katech.git
 ```
 
-## Docker enviornment
+## Docker environment
 ```
 # create the docker container, you can change the share memory size if you have more.
 nvidia-docker run --name yolor -it -v your_coco_path/:/coco/ -v your_code_path/:/yolor --shm-size=64g nvcr.io/nvidia/pytorch:20.11-py3
@@ -38,3 +38,6 @@ pip install .
 cd /yolor
 
 ```
+
+## Dataset format
+Pascal VOC (XML) to YOLO(txt)
