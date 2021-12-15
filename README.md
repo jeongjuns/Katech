@@ -97,6 +97,9 @@ python detect.py --source inference/images/horses.jpg --cfg cfg/??? --weights ??
 
 ## Dataset format
 YOLO(txt) to Pascal VOC(XML)
+move images to convert_yolo2kt/kt/images
+move txt labels to convert_yolo2kt/kt/labels
 ```
-???
+cd convert_yolo2kt
+python yolo_to_kt.py
 ```
