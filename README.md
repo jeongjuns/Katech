@@ -39,7 +39,7 @@ cd /projectVI_yolor
 
 ```
 
-## Dataset format
+## Convert Dataset format
 Make list.txt (image name list)
 Such as..
 ```
