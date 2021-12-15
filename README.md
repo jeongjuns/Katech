@@ -1,5 +1,5 @@
 # Katech
-katech contest
+katech contest (Team ProjectVI)
 
 ## Installation
 YOLOR (https://github.com/WongKinYiu/yolor)
