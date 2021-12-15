@@ -67,13 +67,12 @@ Such as..
 1_20200602_140137_000180
 ```
 
-Convert Pascal VOC(XML) to YOLO(txt)   
-using kt_label.py (You should modify the image and label path to suit you)
+Convert Pascal VOC(xml) to YOLO(txt) using kt_label.py (**You should modify the image and label path to suit you**)
 ```
 python kt_label.py
 ```
 
-Modify path in .yaml for your environment
+Modify path in kt.yaml for your environment
 ```
 train: kt2yolo/kt_train.txt
 val: kt2yolo/kt_val.txt
