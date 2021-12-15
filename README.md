@@ -79,7 +79,7 @@ val: kt2yolo/kt_val.txt
 test: kt2yolo/kt_val.txt
 ```
 ## Testing mAP
-[`yolor_p6.pt`](https://drive.google.com/file/d/1Tdn3yqpZ79X7R1Ql0zNlNScB1Dv9Fp76/view?usp=sharing)
+[`Katech_best.pt`](https://drive.google.com/file/d/1pUzCRtKX7QtwHCX0lsIJ9bQjePnnXYSE/view?usp=sharing)
 ```
 python test.py --data data/kt.yaml --img 1920 --batch 4 --conf ?? --iou ?? --device 0 --cfg cfg/yolor_p6_kt.cfg --weights ??? --name katech_mAPtest --save-txt --names data/kt.names --verbose
 ```
@@ -97,9 +97,9 @@ python detect.py --source inference/images/ --img-size 1920 --conf ?? --iou ?? -
 ```
 
 ## Convert Dataset format
-YOLO(txt) to Pascal VOC(XML)   
-move images to convert_yolo2kt/kt/images   
-move txt labels to convert_yolo2kt/kt/labels   
+YOLO(txt) to Pascal VOC(xml)   
+Move images to convert_yolo2kt/kt/images   
+Move txt labels to convert_yolo2kt/kt/labels   
 ```
 cd convert_yolo2kt
 python yolo_to_kt.py
