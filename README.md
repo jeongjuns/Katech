@@ -94,7 +94,7 @@ python -m torch.distributed.launch --nproc_per_node 4 --master_port 9127 we.py -
 
 ## Image Inference
 ```
-python detect.py --source inference/images/horses.jpg --cfg cfg/??? --weights ?????? --conf ???? --img-size 1920 --device 0
+python detect.py --source inference/images/1_20200602_140054_000000.jpg --cfg cfg/??? --weights ?????? --conf ???? --img-size 1920 --device 0
 ```
 
 ## Convert Dataset format
