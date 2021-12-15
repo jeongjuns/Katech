@@ -10,7 +10,7 @@ git clone https://github.com/jeongjuns/Katech.git
 ## Docker environment
 ```
 # create the docker container, you can change the share memory size if you have more.
-nvidia-docker run --name yolor -it -v your_coco_path/:/coco/ -v your_code_path/:/yolor --shm-size=64g nvcr.io/nvidia/pytorch:20.11-py3
+nvidia-docker run --name yolor -it -v your_code_path/:/projectVI_yolor --shm-size=64g nvcr.io/nvidia/pytorch:20.11-py3
 
 # apt install required packages
 apt update
@@ -35,7 +35,7 @@ cd pytorch_wavelets
 pip install .
 
 # go to code folder
-cd /yolor
+cd /projectVI_yolor
 
 ```
 
