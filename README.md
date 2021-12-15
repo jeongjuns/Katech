@@ -4,7 +4,7 @@ katech contest
 ## Installation
 YOLOR (https://github.com/WongKinYiu/yolor)
 ```
-git clone
+git clone https://github.com/jeongjuns/Katech.git
 ```
 
 ## Docker enviornment
