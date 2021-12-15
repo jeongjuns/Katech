@@ -35,7 +35,7 @@ cd pytorch_wavelets
 pip install .
 
 # go to code folder
-cd Katech
+cd yolor
 
 ```
 
