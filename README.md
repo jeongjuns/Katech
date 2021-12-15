@@ -41,3 +41,7 @@ cd /yolor
 
 ## Dataset format
 Pascal VOC (XML) to YOLO(txt)
+using kt_label.py (You should modify the image and label path to suit you)
+```
+python kt_label.py
+```
