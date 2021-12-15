@@ -95,7 +95,7 @@ python -m torch.distributed.launch --nproc_per_node 4 --master_port 9127 we.py -
 python detect.py --source inference/images/horses.jpg --cfg cfg/??? --weights ?????? --conf ???? --img-size 1920 --device 0
 ```
 
-## Dataset format
+## Convert Dataset format
 YOLO(txt) to Pascal VOC(XML)   
 move images to convert_yolo2kt/kt/images   
 move txt labels to convert_yolo2kt/kt/labels   
