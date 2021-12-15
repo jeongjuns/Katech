@@ -40,7 +40,7 @@ cd /projectVI_yolor
 ```
 
 ## Convert Dataset format
-Make list.txt (image name list)
+Make list.txt (image name list)   
 Such as..
 ```
 1_20200602_140054_000420
@@ -67,7 +67,7 @@ Such as..
 1_20200602_140137_000180
 ```
 
-Convert Pascal VOC(XML) to YOLO(txt)
+Convert Pascal VOC(XML) to YOLO(txt)   
 using kt_label.py (You should modify the image and label path to suit you)
 ```
 python kt_label.py
@@ -96,9 +96,9 @@ python detect.py --source inference/images/horses.jpg --cfg cfg/??? --weights ??
 ```
 
 ## Dataset format
-YOLO(txt) to Pascal VOC(XML)
-move images to convert_yolo2kt/kt/images
-move txt labels to convert_yolo2kt/kt/labels
+YOLO(txt) to Pascal VOC(XML)   
+move images to convert_yolo2kt/kt/images   
+move txt labels to convert_yolo2kt/kt/labels   
 ```
 cd convert_yolo2kt
 python yolo_to_kt.py
