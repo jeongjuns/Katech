@@ -86,6 +86,8 @@ python test.py --data data/kt.yaml --img 1920 --batch 4 --conf ?? --iou ?? --dev
 ```
 
 ## Training schedule
+[`yolor_p6.pt`](https://drive.google.com/file/d/1Tdn3yqpZ79X7R1Ql0zNlNScB1Dv9Fp76/view?usp=sharing)   
+
 ```
 python -m torch.distributed.launch --nproc_per_node 4 --master_port 9127 we.py --batch-size 16 --img 1280 1280 --data kt.yaml --cfg cfg/yolor_p6_kt.cfg --device 0,1,2,3 --sync-bn --hyp data/hyp.scratch.1280.yaml --epochs 300 --weights yolor_p6.pt --name ??? --workers 16
 ```
