@@ -79,14 +79,15 @@ val: kt2yolo/kt_val.txt
 test: kt2yolo/kt_val.txt
 ```
 ## Testing mAP
-[`Katech_best.pt`](https://drive.google.com/file/d/1Q16YUdUz8SA0L76d4g3waFaRMxMCcidd/view?usp=sharing)
+[`Katech_best.pt`](https://drive.google.com/file/d/1Q16YUdUz8SA0L76d4g3waFaRMxMCcidd/view?usp=sharing)   
+Download best weight training with Katech training dataset for test mAP
 ```
 python test.py --data data/kt.yaml --img 1920 --batch 4 --conf 0.3 --iou 0.5 --device 0 --cfg cfg/yolor_p6_kt.cfg --weights Katech_best.pt --name katech_mAPtest --save-txt --names data/kt.names --verbose
 ```
 
 ## Training schedule
 [`yolor_p6.pt`](https://drive.google.com/file/d/1Tdn3yqpZ79X7R1Ql0zNlNScB1Dv9Fp76/view?usp=sharing)   
-
+Download COCO pretrained weight for initialization
 ```
 python -m torch.distributed.launch --nproc_per_node 4 --master_port 9127 we.py --batch-size 16 --img 1280 1280 --data kt.yaml --cfg cfg/yolor_p6_kt.cfg --device 0,1,2,3 --sync-bn --hyp data/hyp.scratch.1280.yaml --epochs 300 --weights yolor_p6.pt --name Katech --workers 16
 ```
