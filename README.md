@@ -79,21 +79,21 @@ val: kt2yolo/kt_val.txt
 test: kt2yolo/kt_val.txt
 ```
 ## Testing mAP
-[`Katech_best.pt`](https://drive.google.com/file/d/1pUzCRtKX7QtwHCX0lsIJ9bQjePnnXYSE/view?usp=sharing)
+[`Katech_best.pt`](https://drive.google.com/file/d/1Q16YUdUz8SA0L76d4g3waFaRMxMCcidd/view?usp=sharing)
 ```
-python test.py --data data/kt.yaml --img 1920 --batch 4 --conf ?? --iou ?? --device 0 --cfg ???? --weights Katech_best.pt --name katech_mAPtest --save-txt --names data/kt.names --verbose
+python test.py --data data/kt.yaml --img 1920 --batch 4 --conf 0.3 --iou 0.5 --device 0 --cfg cfg/yolor_p6_kt.cfg --weights Katech_best.pt --name katech_mAPtest --save-txt --names data/kt.names --verbose
 ```
 
 ## Training schedule
 [`yolor_p6.pt`](https://drive.google.com/file/d/1Tdn3yqpZ79X7R1Ql0zNlNScB1Dv9Fp76/view?usp=sharing)   
 
 ```
-python -m torch.distributed.launch --nproc_per_node 4 --master_port 9127 we.py --batch-size 16 --img 1280 1280 --data kt.yaml --cfg ??? --device 0,1,2,3 --sync-bn --hyp data/hyp.scratch.1280.yaml --epochs 300 --weights yolor_p6.pt --name ??? --workers 16
+python -m torch.distributed.launch --nproc_per_node 4 --master_port 9127 we.py --batch-size 16 --img 1280 1280 --data kt.yaml --cfg cfg/yolor_p6_kt.cfg --device 0,1,2,3 --sync-bn --hyp data/hyp.scratch.1280.yaml --epochs 300 --weights yolor_p6.pt --name Katech --workers 16
 ```
 
 ## Image Inference
 ```
-python detect.py --source inference/images/ --img-size 1920 --conf ?? --iou ?? --device 0 --cfg cfg/y??? --weights Katech_best.pt --save-txt --names data/kt.names
+python detect.py --source inference/images/ --img-size 1920 --conf 0.3 --iou 0.5 --device 0 --cfg cfg/yolor_p6_kt.cfg --weights Katech_best.pt --save-txt --names data/kt.names
 ```
 
 ## Convert Dataset format
