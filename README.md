@@ -107,5 +107,6 @@ python yolo_to_kt.py
 ```
 ## Make result dir
 ```
+cd convert_yolo2kt
 python result_dir.py
 ```
