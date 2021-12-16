@@ -105,3 +105,7 @@ Move txt labels to convert_yolo2kt/kt/labels
 cd convert_yolo2kt
 python yolo_to_kt.py
 ```
+## Make result dir
+```
+python result_dir.py
+```
