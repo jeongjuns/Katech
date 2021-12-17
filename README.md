@@ -68,7 +68,9 @@ Such as..
 1_20200602_140137_000180
 ```
 
-Convert Pascal VOC(xml) to YOLO(txt) using kt_label.py (**You should modify the image and label path to suit you**)
+Convert Pascal VOC(xml) to YOLO(txt) using kt_label.py (**You should modify the image and label path to suit you**)   
+Move all images to kt_all_image/   
+Move all labels(xml) to kt_all_ann/
 ```
 python kt_label.py
 ```
