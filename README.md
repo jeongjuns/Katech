@@ -102,7 +102,8 @@ python -m torch.distributed.launch --nproc_per_node 4 --master_port 9127 we.py -
 ```
 python detect.py --source inference/images/ --img-size 1920 --conf 0.3 --iou 0.5 --device 0 --cfg cfg/yolor_p6_kt.cfg --weights Katech_best.pt --save-txt --names data/kt.names
 ```
-output results(txt, pred image) are saved at inference/outputs/   
+output results(txt, pred image) are saved at inference/outputs/    
+You can change --conf & --iou for better performance
 
 ## Convert Dataset format
 YOLO(txt) to Pascal VOC(xml)   
