@@ -25,8 +25,8 @@ def convert(size, box, image_id):
     return (x,y,w,h)
 
 def convert_annotation(image_id):
-    in_file = open('kt_all_ann/%s%s.xml'%(image_id, '_v001_1'))
-    out_file = open('all_labels/%s.txt'%(image_id,), 'w')
+    in_file = open('kt_all_ann/%s%s.xml'%(image_id, '_v001_1'))     #xml file path
+    out_file = open('all_labels/%s.txt'%(image_id,), 'w')           #output txt file path
     tree=ET.parse(in_file)
     root = tree.getroot()
     size = root.find('size')
@@ -74,8 +74,8 @@ def convert_annotation(image_id):
 #for year, image_set in sets:
 if not os.path.exists('/all_labels/'):
     os.makedirs('/all_labels/')
-image_ids = open('list.txt').read().strip().split()
-list_file = open('kt_train.txt', 'w')
+image_ids = open('list.txt').read().strip().split()     #list of dataset image_id
+list_file = open('kt_train.txt', 'w')     #list of image path for training. you should split this file if you want validation set.
 for image_id in image_ids:
     list_file.write('kt_all_images/%s.jpg\n'%(image_id))
     convert_annotation(image_id)
