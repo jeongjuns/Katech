@@ -75,7 +75,10 @@ Move all labels(xml) to kt_all_ann/
 python kt_label.py
 ```
 
-Modify path in kt.yaml for your environment
+Modify path in kt.yaml for your environment   
+Move all images to kt2yolo/images/
+Move all .txt labels to kt2yolo/labels/   
+Modify path in kt_train.txt and kt_val.txt
 ```
 train: kt2yolo/kt_train.txt
 val: kt2yolo/kt_val.txt
