@@ -69,7 +69,7 @@ Such as..
 ```
 
 Convert Pascal VOC(xml) to YOLO(txt) using kt_label.py (**You should modify the image and label path to suit you**)   
-Move all images to kt_all_image/   
+Move all images to kt_all_images/   
 Move all labels(xml) to kt_all_ann/
 ```
 python kt_label.py
