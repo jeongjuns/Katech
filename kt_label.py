@@ -74,7 +74,7 @@ def convert_annotation(image_id):
 #for year, image_set in sets:
 if not os.path.exists('/all_labels/'):
     os.makedirs('/all_labels/')
-image_ids = open('train.txt').read().strip().split()
+image_ids = open('list.txt').read().strip().split()
 list_file = open('kt_train.txt', 'w')
 for image_id in image_ids:
     list_file.write('kt_all_images/%s.jpg\n'%(image_id))
