@@ -33,5 +33,5 @@ for f in file_list:
 print(full_name)    #2_20200615_140701_004740_v001_1.xml
 print(idx)   #1.xml
 print(folder_name)  #20200615_140701
-print(sub_name) #2_result
+print(sub_name) #2
   
