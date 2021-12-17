@@ -41,6 +41,7 @@ cd yolor
 
 ## Convert Dataset format
 Make list.txt (image name list)   
+You can make list.txt using Linux or Window command.
 Such as..
 ```
 1_20200602_140054_000420
