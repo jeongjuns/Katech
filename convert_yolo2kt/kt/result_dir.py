@@ -16,11 +16,12 @@ for f in file_list:
     sub_name = img_name[0]
     result_name = img_name[0] + '_result'
     
+    if not os.path.exists(dst + folder_name):
+        os.makedirs(dst + folder_name)
+        
     if not os.path.exists(dst + folder_name + '/' + sub_name):
         os.makedirs(dst + folder_name + '/' + sub_name)
         
-    if not os.path.exists(dst + folder_name):
-        os.makedirs(dst + folder_name)
     result_path = dst + folder_name + '/' + result_name
 
     if not os.path.exists(result_path):
