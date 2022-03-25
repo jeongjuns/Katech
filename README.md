@@ -9,6 +9,10 @@ git clone https://github.com/jeongjuns/Katech.git
 
 ## Docker environment
 ```
+# Download docker images
+docker pull nvcr.io/nvidia/pytorch:22.02-py3
+docker pull pytorch/pytorch:1.9.0-cuda10.2-cudnn7-devel
+
 # create the docker container, you can change the share memory size if you have more.
 nvidia-docker run --name test -it -v your_code_path/:/yolor --shm-size=64g nvcr.io/nvidia/pytorch:20.11-py3
 
